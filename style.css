@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #f3f8fe;
+}
+
+.showcase {
+  padding: 0px 32px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0px;
+  /* background-color: brown; */
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+nav ul li:last-child {
+  color: white;
+  background-color: black;
+}
+
+.showcase h5 {
+  font-weight: 500;
+  padding: 24px 0px;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+}
+
+h1 {
+  background-image: url("images/bg.jpg");
+  object-fit: contain;
+  background-size: cover;
+  background-position: bottom;
+  flex-basis: 80%;
+  font-size: 96px;
+  margin: auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading ul {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 32px;
+}
+
+.heading ul li {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.heading ul li span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.heading ul li img {
+  width: 36px;
+  height: 36px;
+}
+
+.hot-movie-card {
+  background-color: white;
+  color: black;
+  position: relative;
+  top: -100px;
+  margin-left: auto;
+  z-index: 2;
+  padding: 0px 56px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+hot-movie {
+  display: flex;
+}
+
+.hot-movie-card h2 {
+  padding: 16px 0px;
+  width: 70%;
+}
+
+.hot-movie-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hot-movie-list > img {
+  width: 24px;
+  height: 24px;
+}
+
+.hot-movie-card > .next,
+.hot-movie-card > .prev {
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.hot-movie-card > .next {
+  background-color: black;
+  position: relative;
+  right: -80px;
+}
+
+.hot-movie-card > .prev {
+  background-color: white;
+  position: relative;
+  left: -200px;
+  z-index: 2;
+}
+
+.hot-movie-item {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+}
+
+.hot-movie-item img {
+  object-fit: cover;
+}
+
+.hot-movie-item .movie-name {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 0px;
+}
+
+.hot-movie-item .movie-description {
+  font-size: 12px;
+  color: #646464;
+}
+
+footer {
+  width: 100%;
+  margin-top: 8rem;
+  background-color: black;
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding: 36px 0px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 36px;
+}
+
+.cinema-branch-name > img {
+  background-color: white;
+  padding: 4px;
+}
+
+.cinema-branch-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cinema-branch {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: s; */
+}
+
+.cinema-theatre-name {
+  font-size: 28px;
+}
+
+.cinema-theatre-name,
+.cinema-branch-name {
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.cinema-branch-name {
+  font-size: 18px;
+}
+
+.treater-location,
+.cinema-branch span {
+  line-height: 1.4rem;
+  color: #cfcfcf;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
